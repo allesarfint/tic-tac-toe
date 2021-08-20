@@ -10,12 +10,12 @@
 <body>
     <content>
         <nav class="navbar">
-            <div id="menu" class="navbutton">
+            <div id="new-game" class="navbutton">
                 New Game
             </div>
             <div id="score" class="score">
-                <span>Turn:</span>
-                <div class="player1">Player 1</div>
+                <span id="turn">Turn:</span>
+                <div id="current-name" class="player1">Player 1</div>
             </div>
             <div id="restart" class="navbutton">
                 Restart Game
@@ -23,13 +23,13 @@
         </nav>
         <div id="play-zone" class="play-zone">
             <div id="gameboard" class="gameboard">
-                <div class="boardbox x">X</div>
-                <div class="boardbox o">O</div>
-                <div class="boardbox x">X</div>
-                <div class="boardbox o">O</div>
+                <div class="boardbox X">X</div>
+                <div class="boardbox O">O</div>
+                <div class="boardbox X">X</div>
+                <div class="boardbox O">O</div>
                 <div class="boardbox"></div>
                 <div class="boardbox"></div>
-                <div class="boardbox x">X</div>
+                <div class="boardbox X">X</div>
                 <div class="boardbox"></div>
                 <div class="boardbox"></div>
             </div>
@@ -43,15 +43,15 @@
                     <label for="human">
                         vs Human
                     </label>
-                    <input type="radio" id="bot" name="game-type">
+                    <input type="radio" id="bot" name="game-type" disabled>
                     <label for="bot">
                         vs AI
                     </label>
                 </div>
                 <div class="player-info">
-                    <input type="text" class="player-name" id="player1-name" maxlength="12" placeholder="Player 1">
-                    <input type="text" class="player-name" id="player2-name" maxlength="12" placeholder="Player 2">
-                    <button id="button-start">START GAME</button>
+                    <input type="text" class="player-name" id="player-one-name" maxlength="12" placeholder="Player 1">
+                    <input type="text" class="player-name" id="player-two-name" maxlength="12" placeholder="Player 2">
+                    <button type="button" id="button-start">START GAME</button>
                 </div>
             </form>
         </div>

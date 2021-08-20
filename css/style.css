@@ -92,11 +92,11 @@ content {
     cursor: pointer;
 }
 
-.gameboard .x {
+.gameboard .X {
     color:rgb(134, 91, 255)
 }
 
-.gameboard .o {
+.gameboard .O {
     color:rgb(255, 73, 73)
 }
 
